@@ -25,7 +25,7 @@ public class PersonController {
         Person obj = objs.stream().filter(it -> it.getId().equals(id))
                 .findFirst()
                 .orElseThrow();
-        LOG.info("Found: {}", obj.getId());
+        LOG.debug("Found: {}", obj.getId());
         return obj;
     }
 
